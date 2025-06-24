@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Exploit_Public_Facing_Application">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="PowerShell">
+			<state id="False" />
+			<state id="True" />
+			<parents>Exploit_Public_Facing_Application</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Disable_or_Modify_Tools">
+			<state id="False" />
+			<state id="True" />
+			<parents>PowerShell</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer">
+			<state id="False" />
+			<state id="True" />
+			<parents>Disable_or_Modify_Tools</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="File_Deletion">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Local_Account">
+			<state id="False" />
+			<state id="True" />
+			<parents>File_Deletion</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Internet_Connection_Discovery">
+			<state id="False" />
+			<state id="True" />
+			<parents>Local_Account</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Scheduled_Task">
+			<state id="False" />
+			<state id="True" />
+			<parents>Internet_Connection_Discovery</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Domain_Account">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Lateral_Tool_Transfer">
+			<state id="False" />
+			<state id="True" />
+			<parents>Disable_or_Modify_Tools</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Proxy">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Tool_Transfer</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Remote_Desktop_Protocol">
+			<state id="False" />
+			<state id="True" />
+			<parents>Scheduled_Task Domain_Account Proxy</parents>
+			<probabilities>0.99 0.01 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Default_Accounts">
+			<state id="False" />
+			<state id="True" />
+			<parents>Remote_Desktop_Protocol</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Lateral_Movement">
+			<state id="False" />
+			<state id="True" />
+			<parents>Default_Accounts</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Remote_System_Discovery">
+			<state id="False" />
+			<state id="True" />
+			<parents>PowerShell</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Account_Manipulation">
+			<state id="False" />
+			<state id="True" />
+			<parents>Remote_System_Discovery</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="LSASS_Memory">
+			<state id="False" />
+			<state id="True" />
+			<parents>Account_Manipulation</parents>
+			<probabilities>0.99 0.01 0.3 0.7</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="Exploit_Public_Facing_Application">
+				<name>Exploit_Public_Facing_Application</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="PowerShell">
+				<name>PowerShell</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Disable_or_Modify_Tools">
+				<name>Disable_or_Modify_Tools</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer">
+				<name>Ingress_Tool_Transfer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="File_Deletion">
+				<name>File_Deletion</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Local_Account">
+				<name>Local_Account</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Internet_Connection_Discovery">
+				<name>Internet_Connection_Discovery</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Scheduled_Task">
+				<name>Scheduled_Task</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Remote_Desktop_Protocol">
+				<name>Remote_Desktop_Protocol</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Default_Accounts">
+				<name>Default_Accounts</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Lateral_Movement">
+				<name>Lateral_Movement</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Domain_Account">
+				<name>Domain_Account</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Lateral_Tool_Transfer">
+				<name>Lateral_Tool_Transfer</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Proxy">
+				<name>Proxy</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Remote_System_Discovery">
+				<name>Remote_System_Discovery</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Account_Manipulation">
+				<name>Account_Manipulation</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="LSASS_Memory">
+				<name>LSASS_Memory</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
