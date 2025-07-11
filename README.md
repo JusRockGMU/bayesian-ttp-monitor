@@ -22,6 +22,22 @@ Ensure:
 brew install grafana
 ```
 
+## How Evidence Is Named
+
+Evidence nodes in the Bayesian Networks follow specific names derived from MITRE ATT\&CK techniques. For example:
+
+```
+Phishing_Spearphishing_Attachm_attack_action_a3679838
+```
+
+Use the exact names returned from the `/nodes` API endpoint when submitting evidence.
+
+## Video Walkthrough
+
+A short video explaining the project structure and Makefile usage is available here:
+
+[Project Walkthrough Video](https://youtu.be/N1MADJLQwPI)
+
 ## Start All Services
 
 Run the entire stack:
@@ -178,6 +194,49 @@ curl -X POST http://localhost:8000/evidence \
   ]}'
 ```
 
+## Inference Log Feature
+
+This project logs belief updates each time new evidence is submitted. After any call to the `/evidence` endpoint, the current belief state of all nodes in all loaded Bayesian Networks is captured and stored.
+
+### Where the Logs Are Stored
+
+* Logs are saved as JSON snapshots in:
+
+```
+logs/inference_log.json
+```
+
+Each snapshot includes:
+
+* Timestamp of when the evidence was submitted
+* Belief values (true probabilities) for every node in each Bayesian Network
+
+Example log file contents:
+
+```json
+[
+  {
+    "timestamp": "2025-07-10 21:45:30",
+    "beliefs": {
+      "BlackBastaRansomware": {
+        "T1059.001": 0.92,
+        "T1105": 0.15
+      }
+    }
+  }
+]
+```
+
+### Accessing the Logs via API
+
+You can retrieve the entire inference history with:
+
+```
+curl http://localhost:8000/log
+```
+
+This returns the full log as JSON for analysis or debugging.
+
 ## Example Workflow
 
 ```
@@ -191,6 +250,9 @@ curl -X POST http://localhost:8000/evidence \
 
 # 3. Re-check beliefs
 curl http://localhost:8000/inference | jq '.BlackBastaRansomware'
+
+# 4. View log of all inferences
+curl http://localhost:8000/log | jq
 ```
 
 ## Dashboard Thresholds
