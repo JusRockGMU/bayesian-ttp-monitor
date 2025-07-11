@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="CISAAA22_138BVMWareWorkspace_AltOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Exploitation_for_Client_Execut_attack_action_84454574">
+			<state id="False" />
+			<state id="True" />
+			<parents>CISAAA22_138BVMWareWorkspace_AltOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Exploitation_for_Privilege_Esc_attack_action_401fbfb9">
+			<state id="False" />
+			<state id="True" />
+			<parents>Exploitation_for_Client_Execut_attack_action_84454574</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Scripting_Interpre_attack_action_3c019d2c">
+			<state id="False" />
+			<state id="True" />
+			<parents>Exploitation_for_Privilege_Esc_attack_action_401fbfb9</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Discovery_attack_action_1472fccf">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Scripting_Interpre_attack_action_3c019d2c</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Indicator_Removal_attack_action_24692f77">
+			<state id="False" />
+			<state id="True" />
+			<parents>Discovery_attack_action_1472fccf</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Archive_via_Utility_attack_action_7fa1a34d">
+			<state id="False" />
+			<state id="True" />
+			<parents>Indicator_Removal_attack_action_24692f77</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Control_attack_action_35c17809">
+			<state id="False" />
+			<state id="True" />
+			<parents>Archive_via_Utility_attack_action_7fa1a34d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_3c3fea04">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_35c17809</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="File_and_Directory_Discovery_attack_action_747d2282">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_3c3fea04</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_6dbde84b">
+			<state id="False" />
+			<state id="True" />
+			<parents>File_and_Directory_Discovery_attack_action_747d2282</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Indicator_Removal_attack_action_298530ff">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_6dbde84b</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="CISAAA22_138BVMWareWorkspace_AltOccurred">
+				<name>CISAAA22_138BVMWareWorkspace_AltOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exploitation_for_Client_Execut_attack_action_84454574">
+				<name>Exploitation_for_Client_Execut_attack_action_84454574</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exploitation_for_Privilege_Esc_attack_action_401fbfb9">
+				<name>Exploitation_for_Privilege_Esc_attack_action_401fbfb9</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Scripting_Interpre_attack_action_3c019d2c">
+				<name>Command_and_Scripting_Interpre_attack_action_3c019d2c</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Discovery_attack_action_1472fccf">
+				<name>Discovery_attack_action_1472fccf</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Indicator_Removal_attack_action_24692f77">
+				<name>Indicator_Removal_attack_action_24692f77</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Archive_via_Utility_attack_action_7fa1a34d">
+				<name>Archive_via_Utility_attack_action_7fa1a34d</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Control_attack_action_35c17809">
+				<name>Command_and_Control_attack_action_35c17809</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_3c3fea04">
+				<name>Ingress_Tool_Transfer_attack_action_3c3fea04</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="File_and_Directory_Discovery_attack_action_747d2282">
+				<name>File_and_Directory_Discovery_attack_action_747d2282</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_6dbde84b">
+				<name>Ingress_Tool_Transfer_attack_action_6dbde84b</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Indicator_Removal_attack_action_298530ff">
+				<name>Indicator_Removal_attack_action_298530ff</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

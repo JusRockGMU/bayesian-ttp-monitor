@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="ContiRansomwareOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Spearphishing_Attachment_attack_action_63b4d51e">
+			<state id="False" />
+			<state id="True" />
+			<parents>ContiRansomwareOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="JavaScript_attack_action_7a811b31">
+			<state id="False" />
+			<state id="True" />
+			<parents>Spearphishing_Attachment_attack_action_63b4d51e</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_8fbbfd31">
+			<state id="False" />
+			<state id="True" />
+			<parents>JavaScript_attack_action_7a811b31</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Rundll32_attack_action_0cd8c60f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_8fbbfd31</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Exfiltration_attack_action_726c3e3f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Rundll32_attack_action_0cd8c60f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_e9da9ad8_37a3_attack_condition_e9da9ad8">
+			<state id="False" />
+			<state id="True" />
+			<parents>Exfiltration_attack_action_726c3e3f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="ContiRansomwareOccurred">
+				<name>ContiRansomwareOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Spearphishing_Attachment_attack_action_63b4d51e">
+				<name>Spearphishing_Attachment_attack_action_63b4d51e</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="JavaScript_attack_action_7a811b31">
+				<name>JavaScript_attack_action_7a811b31</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_8fbbfd31">
+				<name>Ingress_Tool_Transfer_attack_action_8fbbfd31</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Rundll32_attack_action_0cd8c60f">
+				<name>Rundll32_attack_action_0cd8c60f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exfiltration_attack_action_726c3e3f">
+				<name>Exfiltration_attack_action_726c3e3f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_e9da9ad8_37a3_attack_condition_e9da9ad8">
+				<name>attack_condition_e9da9ad8_37a3_attack_condition_e9da9ad8</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

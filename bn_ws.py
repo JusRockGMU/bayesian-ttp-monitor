@@ -3,6 +3,8 @@
 import os
 import pysmile
 import pysmile_license
+import json
+import time
 from flask import Flask, request, jsonify
 from prometheus_client import generate_latest, Gauge, Counter, Histogram, CONTENT_TYPE_LATEST
 
@@ -119,6 +121,50 @@ for apt, net in nets.items():
 print("[INFO] Initial metrics populated.")
 
 # -----------------------------
+# INFERENCE LOGGING
+# -----------------------------
+
+LOG_DIR = "logs"
+LOG_FILE = os.path.join(LOG_DIR, "inference_log.json")
+
+# Make sure logs folder exists
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# In-memory log list
+inference_log = []
+
+def save_log_to_disk():
+    try:
+        with open(LOG_FILE, "w") as f:
+            json.dump(inference_log, f, indent=2)
+        print(f"[INFO] Inference log saved to {LOG_FILE}")
+    except Exception as e:
+        print(f"[ERROR] Could not save log: {e}")
+
+def capture_snapshot():
+    """
+    Captures belief states for all BNs and appends to the log.
+    """
+    snapshot = {
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "beliefs": {}
+    }
+
+    for apt, net in nets.items():
+        node_beliefs = {}
+        handle = net.get_first_node()
+        while handle >= 0:
+            name = net.get_node_name(handle)
+            values = net.get_node_value(handle)
+            true_prob = values[1] if values and len(values) > 1 else 0.0
+            node_beliefs[name] = true_prob
+            handle = net.get_next_node(handle)
+        snapshot["beliefs"][apt] = node_beliefs
+
+    inference_log.append(snapshot)
+    save_log_to_disk()
+
+# -----------------------------
 # API ROUTES
 # -----------------------------
 
@@ -192,6 +238,9 @@ def update_evidence():
                 print(f"[WARN] Could not read belief for {apt}: {e}")
                 apt_gauges[apt].set(0.0)
 
+    # Capture log snapshot after updating all nets
+    capture_snapshot()
+
     return jsonify(results)
 
 
@@ -208,6 +257,14 @@ def inference():
             handle = net.get_next_node(handle)
         results[apt] = node_beliefs
     return jsonify(results)
+
+
+@app.route("/log", methods=["GET"])
+def get_log():
+    """
+    Returns the full inference log.
+    """
+    return jsonify(inference_log)
 
 
 @app.route("/metrics", methods=["GET"])
