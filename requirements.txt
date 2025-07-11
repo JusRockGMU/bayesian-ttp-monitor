@@ -1,0 +1,5 @@
+flask
+prometheus_client
+stix2
+pysmile
+pyyaml

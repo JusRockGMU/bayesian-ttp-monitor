@@ -1,9 +1,9 @@
 {
   "type": "bundle",
-  "id": "bundle--35e2354b-0983-4242-baca-5b14caa6cdca",
+  "id": "bundle--23ef9860-7cde-47e7-857a-2113df9f1d02",
   "spec_version": "2.1",
-  "created": "2025-05-09T15:35:59.959Z",
-  "modified": "2025-05-09T15:35:59.959Z",
+  "created": "2025-07-09T14:43:50.167Z",
+  "modified": "2025-07-09T14:43:50.167Z",
   "objects": [
     {
       "type": "extension-definition",
@@ -47,13 +47,13 @@
       "id": "attack-flow--a2b7e8ad-9fb2-48b3-8e5c-e94da374ab89",
       "spec_version": "2.1",
       "created": "2023-01-27T19:55:42.542Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
         }
       },
-      "created_by_ref": "identity--80ec801e-eb29-4024-bbad-502afa2b7124",
+      "created_by_ref": "identity--9c16f02c-2616-48b1-b1a3-2c58e5fe934d",
       "start_refs": [
         "attack-action--b6143619-dac3-4f9c-ae0a-605961bef9c7"
       ],
@@ -70,10 +70,10 @@
     },
     {
       "type": "identity",
-      "id": "identity--80ec801e-eb29-4024-bbad-502afa2b7124",
+      "id": "identity--9c16f02c-2616-48b1-b1a3-2c58e5fe934d",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "Lauren Parker",
       "contact_information": "lparker@mitre.org"
     },
@@ -81,8 +81,8 @@
       "type": "attack-action",
       "id": "attack-action--b6143619-dac3-4f9c-ae0a-605961bef9c7",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -105,8 +105,8 @@
       "type": "vulnerability",
       "id": "vulnerability--924ed7f2-54ae-42ad-b1af-94734ff368e0",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "CVE-2021-44228",
       "description": "Log4Shell vulnerability that allows attackers to execute arbitrary code loaded from LDAP servers"
     },
@@ -114,8 +114,8 @@
       "type": "note",
       "id": "note--715f87ed-5429-478b-93da-f466a3695f5a",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "content": "LDAP server (51.89.181.64) is used to exploit Log4Shell",
       "object_refs": [
         "vulnerability--924ed7f2-54ae-42ad-b1af-94734ff368e0"
@@ -125,8 +125,8 @@
       "type": "infrastructure",
       "id": "infrastructure--b7ee6cab-d421-4ea9-8f97-d529c383e7fe",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "182.54.217.2",
       "infrastructure_types": [
         "command-and-control"
@@ -136,8 +136,8 @@
       "type": "attack-asset",
       "id": "attack-asset--f37681b2-371c-4764-ae2f-36fdf3244460",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -149,8 +149,8 @@
       "type": "attack-action",
       "id": "attack-action--0d573bcd-ee5d-4231-ab43-188ef7e809e9",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.959Z",
-      "modified": "2025-05-09T15:35:59.959Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -174,8 +174,8 @@
       "type": "attack-action",
       "id": "attack-action--56ca6034-001b-4c5d-99b4-4f9bd3db56ba",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -195,8 +195,8 @@
       "type": "attack-asset",
       "id": "attack-asset--1713a15d-fa56-404a-92eb-2c4f7089d399",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -208,16 +208,16 @@
       "type": "directory",
       "id": "directory--02b1765f-0d2e-4991-8ba8-1053ef09de2c",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "path": "c:\\drive"
     },
     {
       "type": "attack-action",
       "id": "attack-action--cfae690b-64c4-405f-84f1-5e8b65da3f83",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -237,8 +237,8 @@
       "type": "malware",
       "id": "malware--89e310ac-f996-4bc7-9ee7-84b527178fa7",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "mde.ps1",
       "description": "mdeploy.text downloaded from 182.54.217.2/mdeploy.txt to C:\\users\\public\\mde.ps1",
       "malware_types": [
@@ -254,8 +254,8 @@
       "type": "attack-action",
       "id": "attack-action--9c30cd6b-b97c-4336-8f91-777437b3824c",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -275,8 +275,8 @@
       "type": "attack-action",
       "id": "attack-action--3fbadab6-0484-4754-85af-fe99f575677e",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -296,8 +296,8 @@
       "type": "malware",
       "id": "malware--31658705-f1fd-4d16-a928-ecc093820ed4",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "file.zip",
       "description": "mde.ps1 downloads file.zip from 182.54.217.2; contained 4 files",
       "malware_types": [
@@ -313,8 +313,8 @@
       "type": "malware",
       "id": "malware--ac51c325-5c08-4c3d-b89e-c31b1a171a84",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "WinRing0x64.sys",
       "description": "XMRig Miner driver",
       "malware_types": [
@@ -329,8 +329,8 @@
       "type": "malware",
       "id": "malware--d8f8e9a7-0c82-4094-a811-348661a542ac",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "wuacltservice.exe",
       "description": "XMRig Miner",
       "malware_types": [
@@ -345,8 +345,8 @@
       "type": "malware",
       "id": "malware--ab4c411d-58e9-4f99-b0f7-0f67f1f43159",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "RuntimeBroker.exe",
       "description": "associated file",
       "malware_types": [
@@ -364,8 +364,8 @@
       "type": "tool",
       "id": "tool--d783a8af-533c-4ecf-a097-698326a213ed",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "config.json",
       "description": "XMRig Miner configuration",
       "tool_types": [
@@ -376,8 +376,8 @@
       "type": "attack-action",
       "id": "attack-action--857eaaa1-d168-417a-8446-fe6e80095490",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -397,8 +397,8 @@
       "type": "attack-action",
       "id": "attack-action--69978025-0b45-44ae-8a3e-1730d7d93d07",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -418,8 +418,8 @@
       "type": "attack-action",
       "id": "attack-action--de68b787-80bb-424d-8d70-32b0cec8c94f",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -439,16 +439,16 @@
       "type": "process",
       "id": "process--3f5b9295-9d49-410e-b542-54f258b52434",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "command_line": "powershell try{Add-MpPreference -ExclusionPath 'C:\\'; Write-Host 'added-exclusion'} catch {Write-Host 'adding-exclusion-failed' }; powershell -enc \"$BASE64 encoded payload to download next stage and execute it\""
     },
     {
       "type": "malware",
       "id": "malware--ad11d63f-b48d-4c18-b7ff-0baf8edca7e3",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "RuntimeBrokerService.exe",
       "description": "scheduled task is named RuntimeBrokerService.exe, masquerading as a legitimate Windows task",
       "malware_types": [
@@ -465,8 +465,8 @@
       "type": "attack-action",
       "id": "attack-action--f8daeaa9-22f9-4601-96f9-ef3426c4630b",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -486,8 +486,8 @@
       "type": "attack-action",
       "id": "attack-action--57e36a89-fa92-470c-9d78-a90d8bd938a7",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -505,9 +505,8 @@
       "type": "user-account",
       "id": "user-account--039865eb-337f-4941-92c5-14de002c7753",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
-      "user_id": "DefaultAccount",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "account_type": "windows-local",
       "display_name": "DefaultAccount"
     },
@@ -515,33 +514,32 @@
       "type": "ipv4-addr",
       "id": "ipv4-addr--903efce3-4a7d-4272-9c33-7868fc767876",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "value": "182.54.217.2"
     },
     {
       "type": "ipv4-addr",
       "id": "ipv4-addr--c51c9009-568d-46c6-8fac-09b4ce1e848c",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "value": "182.54.217.2"
     },
     {
       "type": "user-account",
       "id": "user-account--8b025fd8-d5a5-408a-8b29-c6795ba84c37",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
-      "user_id": "SYSTEM",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "display_name": "SYSTEM"
     },
     {
       "type": "attack-action",
       "id": "attack-action--c55d72d0-4b7b-4e86-93cf-a65a79ee24ce",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -562,8 +560,8 @@
       "type": "attack-asset",
       "id": "attack-asset--b7164aca-5ac6-449f-b4da-d66f94be41b2",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -575,8 +573,8 @@
       "type": "attack-action",
       "id": "attack-action--0606c44c-4fcf-4d24-837c-e78341f77183",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -596,8 +594,8 @@
       "type": "tool",
       "id": "tool--5b7f7115-8d96-4f17-ab2f-b305b476f8c1",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.167Z",
+      "modified": "2025-07-09T14:43:50.167Z",
       "name": "PsExec",
       "description": "Microsoft signed tool for system administrators",
       "tool_types": [
@@ -608,8 +606,8 @@
       "type": "tool",
       "id": "tool--6f3d8f4c-e92c-42aa-b065-351f552fe10c",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "name": "Mimikatz",
       "description": "credential recovery/theft tool",
       "tool_types": [
@@ -620,8 +618,8 @@
       "type": "malware",
       "id": "malware--5e38cef0-6735-40f6-97dd-1b549424788e",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "name": "Ngrok",
       "description": "reverse proxy tool for proxying an internal service onto an Ngrok domain, which the user can then access at a randomly generated subdomain at *.ngrok.io",
       "malware_types": [
@@ -636,16 +634,16 @@
       "type": "attack-action",
       "id": "attack-action--d8ba9c2f-c6a6-4950-8cb3-d2d84c97859f",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
         }
       },
       "name": "Domain Account",
-      "tactic_id": "TA0004",
-      "tactic_ref": "x-mitre-tactic--5e29b093-294e-49e9-a803-dab3d73b77dd",
+      "tactic_id": "TA0003",
+      "tactic_ref": "x-mitre-tactic--5bc1d813-693e-4823-9961-abf9af4b0e92",
       "technique_id": "T1136.002",
       "technique_ref": "attack-pattern--7610cada-1499-41a4-b3dd-46467b68d177",
       "description": "Mimikatz was used to create a rogue domain administrator account",
@@ -657,8 +655,8 @@
       "type": "attack-action",
       "id": "attack-action--52069465-600c-487a-8185-e809ed74588b",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -678,8 +676,8 @@
       "type": "attack-action",
       "id": "attack-action--1d283005-09ce-49d3-8610-625a75635755",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -699,8 +697,8 @@
       "type": "attack-action",
       "id": "attack-action--ee829570-2ca7-4948-a3de-a667f81fa2f5",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -720,8 +718,8 @@
       "type": "malware",
       "id": "malware--a6988ce0-635c-47fc-9d91-a4d919e97950",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "name": "Ngrok",
       "description": "reverse proxy tool for proxying an internal service onto an Ngrok domain, which the user can then access at a randomly generated subdomain at *.ngrok.io",
       "malware_types": [
@@ -736,8 +734,8 @@
       "type": "attack-action",
       "id": "attack-action--4beb5555-7460-4636-a2e4-096a01b54186",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -757,24 +755,24 @@
       "type": "url",
       "id": "url--5cb4ac20-de90-4aba-8467-fe57ba5af2a8",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "value": "tunnel.us.ngrok[.]com"
     },
     {
       "type": "url",
       "id": "url--3e9fd4ff-625f-42e3-8285-762835bd6b50",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "value": "korgn.su.lennut[.]com"
     },
     {
       "type": "note",
       "id": "note--31244bf1-3b1c-4ba6-bb41-063352cdcfa4",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "content": "attackers may have configured a custom domain or used other Ngrok tunnel domains - *.ngrok[.]com, *.ngrok[.]io, ngrok.*.tunnel[.]com, or korgn.*.lennut[.]com",
       "object_refs": [
         "attack-action--4beb5555-7460-4636-a2e4-096a01b54186"
@@ -784,8 +782,8 @@
       "type": "attack-action",
       "id": "attack-action--7e2175b8-63f8-4934-82cf-394390accd82",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -808,8 +806,8 @@
       "type": "attack-asset",
       "id": "attack-asset--abf74a16-1d54-4a82-9384-b7eac0d9f4c4",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -821,8 +819,8 @@
       "type": "attack-action",
       "id": "attack-action--45e8b0a1-83a5-41dc-8186-7d6d4c8a7c0a",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -843,8 +841,8 @@
       "type": "attack-action",
       "id": "attack-action--2f9114f6-e715-448a-b0b7-3ccce0f95f7a",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -864,16 +862,16 @@
       "type": "process",
       "id": "process--6a0cd876-3fd3-4557-9dfc-7d004cf217ae",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "command_line": "Powershell.exe get-adcomputer -filter * -properties * | select name,operatingsystem,ipv4address &gt;"
     },
     {
       "type": "attack-action",
       "id": "attack-action--792aaa39-bd97-4206-b088-2c29e5119da6",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -893,8 +891,8 @@
       "type": "attack-action",
       "id": "attack-action--99406b0d-2c64-4f78-a80b-f50898876197",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "extensions": {
         "extension-definition--fb9c968a-745b-4ade-9b25-c324172197f4": {
           "extension_type": "new-sdo"
@@ -911,8 +909,8 @@
       "type": "note",
       "id": "note--ed71e0af-94b7-40ae-a434-81b815dea5c8",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "content": "dumping the LSASS process was stopped by additional AV that was installed on the systems",
       "object_refs": [
         "attack-action--99406b0d-2c64-4f78-a80b-f50898876197"
@@ -920,200 +918,200 @@
     },
     {
       "type": "relationship",
-      "id": "relationship--8bcf7cc0-68bb-4d53-a332-24dc6b760610",
+      "id": "relationship--5c351d3d-b7d2-473f-943e-96da5dd81349",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--b6143619-dac3-4f9c-ae0a-605961bef9c7",
       "target_ref": "vulnerability--924ed7f2-54ae-42ad-b1af-94734ff368e0"
     },
     {
       "type": "relationship",
-      "id": "relationship--04469669-0e95-4985-93ac-309656ea1971",
+      "id": "relationship--5278eb95-65c0-4e6d-af87-8483f67b026b",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--b6143619-dac3-4f9c-ae0a-605961bef9c7",
       "target_ref": "infrastructure--b7ee6cab-d421-4ea9-8f97-d529c383e7fe"
     },
     {
       "type": "relationship",
-      "id": "relationship--6cd4cd01-5404-47f8-a852-0510a143f24b",
+      "id": "relationship--57d369bf-5804-4d84-a47b-059e56fe66a5",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--56ca6034-001b-4c5d-99b4-4f9bd3db56ba",
       "target_ref": "directory--02b1765f-0d2e-4991-8ba8-1053ef09de2c"
     },
     {
       "type": "relationship",
-      "id": "relationship--d0334a92-b6dc-40d4-8451-c7e6d92e8eb3",
+      "id": "relationship--00b64f9f-c622-4eea-ae72-39e3be784e56",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--cfae690b-64c4-405f-84f1-5e8b65da3f83",
       "target_ref": "malware--89e310ac-f996-4bc7-9ee7-84b527178fa7"
     },
     {
       "type": "relationship",
-      "id": "relationship--14ea4b97-6a96-40f8-a114-73bb60292510",
+      "id": "relationship--656c9600-60c0-4628-86e6-2376d1d88de2",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--3fbadab6-0484-4754-85af-fe99f575677e",
       "target_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4"
     },
     {
       "type": "relationship",
-      "id": "relationship--0edc056c-e0ef-4a98-a004-f397eaea41e7",
+      "id": "relationship--b48862b8-8c47-4612-a19a-a4b1258a8266",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4",
       "target_ref": "malware--ac51c325-5c08-4c3d-b89e-c31b1a171a84"
     },
     {
       "type": "relationship",
-      "id": "relationship--86dbb290-0176-4936-8cdc-646babf6f487",
+      "id": "relationship--a4548811-51a8-4287-a9df-d61fc4b7208e",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4",
       "target_ref": "malware--d8f8e9a7-0c82-4094-a811-348661a542ac"
     },
     {
       "type": "relationship",
-      "id": "relationship--fe155d4e-33dd-4101-aaf3-a97d4cdd03b2",
+      "id": "relationship--0706b899-8472-4c93-a925-96be4ef00ea0",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4",
       "target_ref": "tool--d783a8af-533c-4ecf-a097-698326a213ed"
     },
     {
       "type": "relationship",
-      "id": "relationship--817708d4-0a62-42f3-ac6e-e8b02c040e34",
+      "id": "relationship--932ab7c9-3f43-454b-ba11-6eedd1455ea1",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4",
       "target_ref": "malware--ab4c411d-58e9-4f99-b0f7-0f67f1f43159"
     },
     {
       "type": "relationship",
-      "id": "relationship--3cb009f6-1b82-4a69-b7ac-fef4d019a1c4",
+      "id": "relationship--01d13d89-4c0c-41e6-af0c-fd8d7bad2a93",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--de68b787-80bb-424d-8d70-32b0cec8c94f",
       "target_ref": "malware--ad11d63f-b48d-4c18-b7ff-0baf8edca7e3"
     },
     {
       "type": "relationship",
-      "id": "relationship--6f3b9b65-5c09-4d43-8b69-34ef0c56e0fb",
+      "id": "relationship--70788e43-cd09-4cad-9792-36bcf30af70a",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--de68b787-80bb-424d-8d70-32b0cec8c94f",
       "target_ref": "user-account--8b025fd8-d5a5-408a-8b29-c6795ba84c37"
     },
     {
       "type": "relationship",
-      "id": "relationship--8a93c452-7895-45fc-b6ed-af04ede4103a",
+      "id": "relationship--75d2627b-a1ab-4bee-bfab-809356cb5df7",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--57e36a89-fa92-470c-9d78-a90d8bd938a7",
       "target_ref": "user-account--039865eb-337f-4941-92c5-14de002c7753"
     },
     {
       "type": "relationship",
-      "id": "relationship--5790ad8d-b6d8-4fe4-9490-99cd735cba5e",
+      "id": "relationship--dac4d12a-cad9-4eaf-8848-0a57892b8a05",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "ipv4-addr--903efce3-4a7d-4272-9c33-7868fc767876",
       "target_ref": "malware--31658705-f1fd-4d16-a928-ecc093820ed4"
     },
     {
       "type": "relationship",
-      "id": "relationship--18901845-e9b6-4402-abb1-ec3028a83f02",
+      "id": "relationship--f56e412f-88b7-424b-8916-be27284c167f",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "ipv4-addr--c51c9009-568d-46c6-8fac-09b4ce1e848c",
       "target_ref": "malware--89e310ac-f996-4bc7-9ee7-84b527178fa7"
     },
     {
       "type": "relationship",
-      "id": "relationship--5e06353f-7cc0-4b7b-a635-fdfb7dbc1bae",
+      "id": "relationship--c603658c-37c8-4ee2-8957-1dc0118ccf74",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--0606c44c-4fcf-4d24-837c-e78341f77183",
       "target_ref": "malware--5e38cef0-6735-40f6-97dd-1b549424788e"
     },
     {
       "type": "relationship",
-      "id": "relationship--db42a2c6-716a-4103-879a-6810a5397116",
+      "id": "relationship--2f378a9d-9ac5-4b4c-94fd-67d137f2eb0c",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--0606c44c-4fcf-4d24-837c-e78341f77183",
       "target_ref": "tool--5b7f7115-8d96-4f17-ab2f-b305b476f8c1"
     },
     {
       "type": "relationship",
-      "id": "relationship--bc4322a0-087a-44fe-b3d6-8246b6eb75fb",
+      "id": "relationship--a6c27c39-61f1-4ada-9388-1457e095e877",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--0606c44c-4fcf-4d24-837c-e78341f77183",
       "target_ref": "tool--6f3d8f4c-e92c-42aa-b065-351f552fe10c"
     },
     {
       "type": "relationship",
-      "id": "relationship--8f1f2c85-46ed-47c3-9b0e-33e3f239981a",
+      "id": "relationship--0ba15e83-db80-40af-b885-c271a7d237dc",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--ee829570-2ca7-4948-a3de-a667f81fa2f5",
       "target_ref": "malware--a6988ce0-635c-47fc-9d91-a4d919e97950"
     },
     {
       "type": "relationship",
-      "id": "relationship--19cd5267-c250-49a2-88fe-374d3e055515",
+      "id": "relationship--9d400934-12d6-4a5b-898f-ff77b355dc01",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--4beb5555-7460-4636-a2e4-096a01b54186",
       "target_ref": "url--5cb4ac20-de90-4aba-8467-fe57ba5af2a8"
     },
     {
       "type": "relationship",
-      "id": "relationship--9b7ab4db-3634-4c1c-9ce2-2e69e3db29b0",
+      "id": "relationship--1caafe8b-d7d0-42db-af1e-6b77ffa56299",
       "spec_version": "2.1",
-      "created": "2025-05-09T15:35:59.960Z",
-      "modified": "2025-05-09T15:35:59.960Z",
+      "created": "2025-07-09T14:43:50.168Z",
+      "modified": "2025-07-09T14:43:50.168Z",
       "relationship_type": "related-to",
       "source_ref": "attack-action--4beb5555-7460-4636-a2e4-096a01b54186",
       "target_ref": "url--3e9fd4ff-625f-42e3-8285-762835bd6b50"

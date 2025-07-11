@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="ShamoonOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_45238a64">
+			<state id="False" />
+			<state id="True" />
+			<parents>ShamoonOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Embedded_Payloads_attack_action_5042c11d">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_45238a64</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_b39f76f6_09ed_attack_condition_b39f76f6">
+			<state id="False" />
+			<state id="True" />
+			<parents>Embedded_Payloads_attack_action_5042c11d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="ShamoonOccurred">
+				<name>ShamoonOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_45238a64">
+				<name>Ingress_Tool_Transfer_attack_action_45238a64</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Embedded_Payloads_attack_action_5042c11d">
+				<name>Embedded_Payloads_attack_action_5042c11d</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_b39f76f6_09ed_attack_condition_b39f76f6">
+				<name>attack_condition_b39f76f6_09ed_attack_condition_b39f76f6</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="HancitorDLLOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Spearphishing_Link_attack_action_0fc122a5">
+			<state id="False" />
+			<state id="True" />
+			<parents>HancitorDLLOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Malicious_File_attack_action_1d851bc1">
+			<state id="False" />
+			<state id="True" />
+			<parents>Spearphishing_Link_attack_action_0fc122a5</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Visual_Basic_attack_action_7f226db5">
+			<state id="False" />
+			<state id="True" />
+			<parents>Malicious_File_attack_action_1d851bc1</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Rundll32_attack_action_8ec450fa">
+			<state id="False" />
+			<state id="True" />
+			<parents>Visual_Basic_attack_action_7f226db5</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_5d55cc3d">
+			<state id="False" />
+			<state id="True" />
+			<parents>Rundll32_attack_action_8ec450fa</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Process_Injection_attack_action_264c553e">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_5d55cc3d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_a2793461_43b8_attack_condition_a2793461">
+			<state id="False" />
+			<state id="True" />
+			<parents>Process_Injection_attack_action_264c553e</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="HancitorDLLOccurred">
+				<name>HancitorDLLOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Spearphishing_Link_attack_action_0fc122a5">
+				<name>Spearphishing_Link_attack_action_0fc122a5</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Malicious_File_attack_action_1d851bc1">
+				<name>Malicious_File_attack_action_1d851bc1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Visual_Basic_attack_action_7f226db5">
+				<name>Visual_Basic_attack_action_7f226db5</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Rundll32_attack_action_8ec450fa">
+				<name>Rundll32_attack_action_8ec450fa</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_5d55cc3d">
+				<name>Ingress_Tool_Transfer_attack_action_5d55cc3d</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Process_Injection_attack_action_264c553e">
+				<name>Process_Injection_attack_action_264c553e</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_a2793461_43b8_attack_condition_a2793461">
+				<name>attack_condition_a2793461_43b8_attack_condition_a2793461</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

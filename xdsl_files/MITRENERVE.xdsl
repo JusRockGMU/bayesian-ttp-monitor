@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="MITRENERVEOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Exploit_Public_Facing_Applicat_attack_action_3211abb9">
+			<state id="False" />
+			<state id="True" />
+			<parents>MITRENERVEOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Web_Shell_attack_action_77d4f01d">
+			<state id="False" />
+			<state id="True" />
+			<parents>Exploit_Public_Facing_Applicat_attack_action_3211abb9</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="RDP_Hijacking_attack_action_04724f7f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Web_Shell_attack_action_77d4f01d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Valid_Accounts_attack_action_926e83ad">
+			<state id="False" />
+			<state id="True" />
+			<parents>RDP_Hijacking_attack_action_04724f7f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Remote_Desktop_Protocol_attack_action_f5d7cebf">
+			<state id="False" />
+			<state id="True" />
+			<parents>Valid_Accounts_attack_action_926e83ad</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Network_Share_Discovery_attack_action_b3ffb250">
+			<state id="False" />
+			<state id="True" />
+			<parents>Remote_Desktop_Protocol_attack_action_f5d7cebf</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Browser_Information_Discovery_attack_action_4a9e529b">
+			<state id="False" />
+			<state id="True" />
+			<parents>Remote_Desktop_Protocol_attack_action_f5d7cebf</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Automated_Collection_attack_action_f0f30a1f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Remote_Desktop_Protocol_attack_action_f5d7cebf</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Data_from_Local_System_attack_action_ca65fb33">
+			<state id="False" />
+			<state id="True" />
+			<parents>Automated_Collection_attack_action_f0f30a1f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Exfiltration_Over_C2_Channel_attack_action_418c0c2f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Data_from_Local_System_attack_action_ca65fb33</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Lateral_Movement_attack_action_18eb79ed">
+			<state id="False" />
+			<state id="True" />
+			<parents>Valid_Accounts_attack_action_926e83ad</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Run_Virtual_Instance_attack_action_3bb64c8b">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Movement_attack_action_18eb79ed</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Defense_Evasion_attack_action_d651cb70">
+			<state id="False" />
+			<state id="True" />
+			<parents>Run_Virtual_Instance_attack_action_3bb64c8b</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Discovery_attack_action_c5c2c45d">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Movement_attack_action_18eb79ed</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Remote_Services_attack_action_b5f01452">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Movement_attack_action_18eb79ed</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="File_and_Directory_Discovery_attack_action_853f83d4">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Movement_attack_action_18eb79ed</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Create_Virtual_Machines_attack_action_bfe2fdd1">
+			<state id="False" />
+			<state id="True" />
+			<parents>Lateral_Movement_attack_action_18eb79ed</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Remote_Desktop_Protocol_attack_action_6c756d93">
+			<state id="False" />
+			<state id="True" />
+			<parents>Create_Virtual_Machines_attack_action_bfe2fdd1</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Control_attack_action_5decc5bb">
+			<state id="False" />
+			<state id="True" />
+			<parents>Valid_Accounts_attack_action_926e83ad</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="RC_Scripts_attack_action_38e9b5ff">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_5decc5bb</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Boot_or_Logon_Initialization_S_attack_action_07a77101">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_5decc5bb</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_operator_818bc7c8_2eb5__attack_operator_818bc7c8">
+			<state id="False" />
+			<state id="True" />
+			<parents>RC_Scripts_attack_action_38e9b5ff Boot_or_Logon_Initialization_S_attack_action_07a77101</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9 0.09999999999999998 0.9 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Control_attack_action_33bd811f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Valid_Accounts_attack_action_926e83ad</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Python_attack_action_d6b7833a">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_33bd811f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Data_Staged_attack_action_a89d0430">
+			<state id="False" />
+			<state id="True" />
+			<parents>Web_Shell_attack_action_77d4f01d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Control_attack_action_fa467188">
+			<state id="False" />
+			<state id="True" />
+			<parents>Web_Shell_attack_action_77d4f01d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Masquerade_File_Type_attack_action_a5f63fa5">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_fa467188</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Symmetric_Cryptography_attack_action_64f75253">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_fa467188</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Command_and_Control_attack_action_7774fba5">
+			<state id="False" />
+			<state id="True" />
+			<parents>Web_Shell_attack_action_77d4f01d</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="File_and_Directory_Discovery_attack_action_3b80bacf">
+			<state id="False" />
+			<state id="True" />
+			<parents>Command_and_Control_attack_action_7774fba5</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Data_from_Local_System_attack_action_ddee5de8">
+			<state id="False" />
+			<state id="True" />
+			<parents>File_and_Directory_Discovery_attack_action_3b80bacf</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Data_Staged_attack_action_645367bc">
+			<state id="False" />
+			<state id="True" />
+			<parents>Data_from_Local_System_attack_action_ddee5de8</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Exfiltration_Over_Alternative__attack_action_9022b397">
+			<state id="False" />
+			<state id="True" />
+			<parents>Data_Staged_attack_action_645367bc</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="MITRENERVEOccurred">
+				<name>MITRENERVEOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exploit_Public_Facing_Applicat_attack_action_3211abb9">
+				<name>Exploit_Public_Facing_Applicat_attack_action_3211abb9</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Web_Shell_attack_action_77d4f01d">
+				<name>Web_Shell_attack_action_77d4f01d</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="RDP_Hijacking_attack_action_04724f7f">
+				<name>RDP_Hijacking_attack_action_04724f7f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Valid_Accounts_attack_action_926e83ad">
+				<name>Valid_Accounts_attack_action_926e83ad</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Remote_Desktop_Protocol_attack_action_f5d7cebf">
+				<name>Remote_Desktop_Protocol_attack_action_f5d7cebf</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Network_Share_Discovery_attack_action_b3ffb250">
+				<name>Network_Share_Discovery_attack_action_b3ffb250</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Browser_Information_Discovery_attack_action_4a9e529b">
+				<name>Browser_Information_Discovery_attack_action_4a9e529b</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Automated_Collection_attack_action_f0f30a1f">
+				<name>Automated_Collection_attack_action_f0f30a1f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Data_from_Local_System_attack_action_ca65fb33">
+				<name>Data_from_Local_System_attack_action_ca65fb33</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exfiltration_Over_C2_Channel_attack_action_418c0c2f">
+				<name>Exfiltration_Over_C2_Channel_attack_action_418c0c2f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Lateral_Movement_attack_action_18eb79ed">
+				<name>Lateral_Movement_attack_action_18eb79ed</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Run_Virtual_Instance_attack_action_3bb64c8b">
+				<name>Run_Virtual_Instance_attack_action_3bb64c8b</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Defense_Evasion_attack_action_d651cb70">
+				<name>Defense_Evasion_attack_action_d651cb70</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Discovery_attack_action_c5c2c45d">
+				<name>Discovery_attack_action_c5c2c45d</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Remote_Services_attack_action_b5f01452">
+				<name>Remote_Services_attack_action_b5f01452</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="File_and_Directory_Discovery_attack_action_853f83d4">
+				<name>File_and_Directory_Discovery_attack_action_853f83d4</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Create_Virtual_Machines_attack_action_bfe2fdd1">
+				<name>Create_Virtual_Machines_attack_action_bfe2fdd1</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Remote_Desktop_Protocol_attack_action_6c756d93">
+				<name>Remote_Desktop_Protocol_attack_action_6c756d93</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Control_attack_action_5decc5bb">
+				<name>Command_and_Control_attack_action_5decc5bb</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="RC_Scripts_attack_action_38e9b5ff">
+				<name>RC_Scripts_attack_action_38e9b5ff</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_operator_818bc7c8_2eb5__attack_operator_818bc7c8">
+				<name>attack_operator_818bc7c8_2eb5__attack_operator_818bc7c8</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Boot_or_Logon_Initialization_S_attack_action_07a77101">
+				<name>Boot_or_Logon_Initialization_S_attack_action_07a77101</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Control_attack_action_33bd811f">
+				<name>Command_and_Control_attack_action_33bd811f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Python_attack_action_d6b7833a">
+				<name>Python_attack_action_d6b7833a</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Data_Staged_attack_action_a89d0430">
+				<name>Data_Staged_attack_action_a89d0430</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Control_attack_action_fa467188">
+				<name>Command_and_Control_attack_action_fa467188</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Masquerade_File_Type_attack_action_a5f63fa5">
+				<name>Masquerade_File_Type_attack_action_a5f63fa5</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Symmetric_Cryptography_attack_action_64f75253">
+				<name>Symmetric_Cryptography_attack_action_64f75253</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Command_and_Control_attack_action_7774fba5">
+				<name>Command_and_Control_attack_action_7774fba5</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="File_and_Directory_Discovery_attack_action_3b80bacf">
+				<name>File_and_Directory_Discovery_attack_action_3b80bacf</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Data_from_Local_System_attack_action_ddee5de8">
+				<name>Data_from_Local_System_attack_action_ddee5de8</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Data_Staged_attack_action_645367bc">
+				<name>Data_Staged_attack_action_645367bc</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Exfiltration_Over_Alternative__attack_action_9022b397">
+				<name>Exfiltration_Over_Alternative__attack_action_9022b397</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="NotPetyaOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Search_Open_WebsitesDomains_attack_action_605180eb">
+			<state id="False" />
+			<state id="True" />
+			<parents>NotPetyaOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Compromise_Software_Supply_Cha_attack_action_9ac3cd71">
+			<state id="False" />
+			<state id="True" />
+			<parents>Search_Open_WebsitesDomains_attack_action_605180eb</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Compromise_Software_Supply_Cha_attack_action_460b67ee">
+			<state id="False" />
+			<state id="True" />
+			<parents>Compromise_Software_Supply_Cha_attack_action_9ac3cd71</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Supply_Chain_Compromise_attack_action_0cfbada8">
+			<state id="False" />
+			<state id="True" />
+			<parents>Compromise_Software_Supply_Cha_attack_action_460b67ee</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Masquerading_attack_action_698fd2b3">
+			<state id="False" />
+			<state id="True" />
+			<parents>Supply_Chain_Compromise_attack_action_0cfbada8</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Security_Software_Discovery_attack_action_371fe05f">
+			<state id="False" />
+			<state id="True" />
+			<parents>Masquerading_attack_action_698fd2b3</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_d3033b02_3cdc_attack_condition_d3033b02">
+			<state id="False" />
+			<state id="True" />
+			<parents>Security_Software_Discovery_attack_action_371fe05f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_7f9d0200_8303_attack_condition_7f9d0200">
+			<state id="False" />
+			<state id="True" />
+			<parents>Security_Software_Discovery_attack_action_371fe05f</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Malware_Privilege_Discovery_attack_action_3d221636">
+			<state id="False" />
+			<state id="True" />
+			<parents>Masquerading_attack_action_698fd2b3</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_6c666fe2_0a6c_attack_condition_6c666fe2">
+			<state id="False" />
+			<state id="True" />
+			<parents>Malware_Privilege_Discovery_attack_action_3d221636</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_3b06b8c3_c293_attack_condition_3b06b8c3">
+			<state id="False" />
+			<state id="True" />
+			<parents>Malware_Privilege_Discovery_attack_action_3d221636</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="NotPetyaOccurred">
+				<name>NotPetyaOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Search_Open_WebsitesDomains_attack_action_605180eb">
+				<name>Search_Open_WebsitesDomains_attack_action_605180eb</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Compromise_Software_Supply_Cha_attack_action_9ac3cd71">
+				<name>Compromise_Software_Supply_Cha_attack_action_9ac3cd71</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Compromise_Software_Supply_Cha_attack_action_460b67ee">
+				<name>Compromise_Software_Supply_Cha_attack_action_460b67ee</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Supply_Chain_Compromise_attack_action_0cfbada8">
+				<name>Supply_Chain_Compromise_attack_action_0cfbada8</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Masquerading_attack_action_698fd2b3">
+				<name>Masquerading_attack_action_698fd2b3</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Security_Software_Discovery_attack_action_371fe05f">
+				<name>Security_Software_Discovery_attack_action_371fe05f</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_d3033b02_3cdc_attack_condition_d3033b02">
+				<name>attack_condition_d3033b02_3cdc_attack_condition_d3033b02</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_7f9d0200_8303_attack_condition_7f9d0200">
+				<name>attack_condition_7f9d0200_8303_attack_condition_7f9d0200</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Malware_Privilege_Discovery_attack_action_3d221636">
+				<name>Malware_Privilege_Discovery_attack_action_3d221636</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_6c666fe2_0a6c_attack_condition_6c666fe2">
+				<name>attack_condition_6c666fe2_0a6c_attack_condition_6c666fe2</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_3b06b8c3_c293_attack_condition_3b06b8c3">
+				<name>attack_condition_3b06b8c3_c293_attack_condition_3b06b8c3</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

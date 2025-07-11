@@ -1,0 +1,15 @@
+# config.yaml
+
+# Default prior for all nodes
+# Format: [P(False), P(True)]
+default_prior: [0.5, 0.5]
+
+# Probability that a child node becomes True if one parent is True
+influence_true_prob: 0.9
+
+# Probability that a child node becomes True if all parents are False
+influence_false_prob: 0.2
+
+# Model type for computing conditional probabilities
+# Options: noisy_or, naive_bayes
+model: noisy_or

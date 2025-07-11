@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was created by ACADEMIC version of SMILE -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="WhisperGateOccurred">
+			<state id="False" />
+			<state id="True" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Valid_Accounts_attack_action_b28935d3">
+			<state id="False" />
+			<state id="True" />
+			<parents>WhisperGateOccurred</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="Ingress_Tool_Transfer_attack_action_c89289c0">
+			<state id="False" />
+			<state id="True" />
+			<parents>Valid_Accounts_attack_action_b28935d3</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<cpt id="attack_condition_d4067e78_456d_attack_condition_d4067e78">
+			<state id="False" />
+			<state id="True" />
+			<parents>Ingress_Tool_Transfer_attack_action_c89289c0</parents>
+			<probabilities>0.8 0.2 0.09999999999999998 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_ACADEMIC 2.4.0@070aab1774fd" name="Unnamed">
+			<node id="WhisperGateOccurred">
+				<name>WhisperGateOccurred</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Valid_Accounts_attack_action_b28935d3">
+				<name>Valid_Accounts_attack_action_b28935d3</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Ingress_Tool_Transfer_attack_action_c89289c0">
+				<name>Ingress_Tool_Transfer_attack_action_c89289c0</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="attack_condition_d4067e78_456d_attack_condition_d4067e78">
+				<name>attack_condition_d4067e78_456d_attack_condition_d4067e78</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

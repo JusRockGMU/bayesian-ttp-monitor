@@ -2,7 +2,6 @@ global:
   scrape_interval: 5s
 
 scrape_configs:
-  - job_name: 'bn-webservice'
+  - job_name: "bn_flask_service"
     static_configs:
-      - targets: ['localhost:8000']
-
+      - targets: ["localhost:8000"]
